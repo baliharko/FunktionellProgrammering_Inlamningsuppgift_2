@@ -2,7 +2,7 @@ package inl_2_kotlin
 
 import java.lang.NullPointerException
 
-val tomteMap = TomteDaoKotlin.allNodes.groupBy { it.name.toLowerCase() }
+val tomteMap = TomteTreeKotlin.allNodes.groupBy { it.name.toLowerCase() }
 
 fun main() {
 

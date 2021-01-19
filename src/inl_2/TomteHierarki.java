@@ -5,7 +5,7 @@ import java.util.Map;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-import static inl_2.TomteDao.getAllNodes;
+import static inl_2.TomteTree.getAllNodes;
 
 public class TomteHierarki {
 

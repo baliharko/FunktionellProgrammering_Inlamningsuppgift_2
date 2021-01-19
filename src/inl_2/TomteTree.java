@@ -3,7 +3,7 @@ package inl_2;
 import java.util.Arrays;
 import java.util.List;
 
-public class TomteDao {
+public class TomteTree {
 
     private static Node tomten = new Node("Tomten");
     private static Node glader = new Node("Glader");

@@ -1,6 +1,6 @@
 package inl_2_kotlin
 
-data class TomteDaoKotlin(val name: String) {
+data class TomteTreeKotlin(val name: String) {
 
     companion object {
 
