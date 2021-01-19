@@ -24,13 +24,11 @@ public class TomteHierarki {
         String dir;
         List<Node> tomtar;
 
-        System.out.println("Vill du söka efter överordnade eller undersåtar? [ö/u]");
-
-        while (!(dir = scan.nextLine().trim()).isEmpty()) {
-            if (dir.trim().equalsIgnoreCase("u") || dir.trim().equalsIgnoreCase("ö"))
+        while (true) {
+            System.out.println("Vill du söka efter överordnade eller undersåtar? [ö/u]");
+            if ((dir = scan.nextLine()) != null &&
+                    (dir.equalsIgnoreCase("u") || dir.trim().equalsIgnoreCase("ö")))
                 break;
-            else
-                System.out.println("Vill du söka efter överordnade eller undersåtar? [ö/u]");
         }
 
         System.out.println("Ange vem du vill börja ifrån: [namn]");
@@ -45,7 +43,7 @@ public class TomteHierarki {
 
             System.out.println(tomteMap.get(name.toLowerCase().trim()).get(0).getName() + "s " + outDir + " är:\n");
             tomtar.forEach(tomte -> System.out.println(tomte.getName()));
-        } catch(NullPointerException e) {
+        } catch (NullPointerException e) {
             System.out.println(name + " har inga " + outDir + " eller jobbar inte i tomteverkstaden.");
         }
     }
